@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "name": "Launch via NPM <frontend>",
+      "request": "launch",
+      "runtimeArgs": ["start"],
+      "cwd": "${workspaceFolder}/frontend",
+      "runtimeExecutable": "npm",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "pwa-node"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot <backend>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/backend",
+      "console": "internalConsole",
+      "mainClass": "codes.matthem.backend.Main",
+      "projectName": "backend",
+      "args": ""
+    }
+  ]
+}
